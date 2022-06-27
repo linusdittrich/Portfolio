@@ -1,0 +1,96 @@
+html {
+    font-family:"Nunito";
+    src: url("/Portfolio/font/Nunito-VariableFont_wght.ttf") format("truetype")
+}
+
+body {
+    background:radial-gradient(#E7EAEF,#6D7587);
+    min-height:calc(100vh - 100px);
+    font-family: Nunito, sans-serif;
+    color: #6D7587;
+}
+
+#hamburger-menu {
+}
+
+
+#top-banner {
+    display:flex;
+    justify-content: center;
+    max-width: 100vw;
+    height:27vw;
+    background-color: #E7EAEF;
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+#Navbar {
+    display:flex;
+    position: relative;
+    justify-content: center;
+    background-color: #E7EAEF;
+    min-height: 7vh;
+    height: 70px;
+    max-width: 100vw;
+    margin-top: 10px; 
+    border-radius: 70px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    
+}
+
+#navbar-hamburger-menu-button{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    aspect-ratio: 1/1 ;
+    height:calc(100% - 20px);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top:0;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 100em;
+    margin: auto 10px auto 10px;
+}
+
+#navbar-hamburger-menu-button img{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    height: 100%;
+    margin:auto;
+    
+}
+
+#hamburger-menu-button-phone{
+    display:block;
+    position: fixed;
+    justify-content: center;
+    height: calc(100%-7vh);
+    width: 7vh;
+    aspect-ratio: 1/1;
+    border-radius: 3.5vh;
+    background-color: #E7EAEF;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 20px 0 0 20px;
+}
+
+#hamburger-menu-button-phone img{
+    display:block;
+    position: relative;
+    height: 100%;
+}
+
+.navbar-button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7EAEF;
+    height:calc(100% - 20px);
+    width: 200em;
+    border-radius: 100em;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: auto 10px auto 40px;
+    font-size: 14px;
+}
