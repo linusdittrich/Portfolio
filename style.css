@@ -375,6 +375,7 @@ a:hover {
     justify-content: center;
     position: relative;
     height: 480px;
+    max-height:calc((100vw - 60px)/4 * 3 + 24px);
     width: 720px;
     max-width: calc(100vw - 40px);
     background-color: var(--main-color);
@@ -385,9 +386,11 @@ a:hover {
 }
 
 #figma-project-1-picture img {
-    height:456px;
+    position: flex;
     width: 684px;
     max-width: calc(100vw - 60px);
+    max-height:calc((100vw - 60px)/4 * 3);
+    height:456px;
     border-radius: 30px;
     margin-top: 12px;
 }
