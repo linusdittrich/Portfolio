@@ -1,38 +1,169 @@
+:root{
+      /*Color Palette*/
+    --main-color: #E7EAEF;
+    --text-color: #6D7587;
+    --hover-color: #a6b1c7;
+}
+
 html {
     font-family:"Nunito";
     src: url("/Portfolio/font/Nunito-VariableFont_wght.ttf") format("truetype")
+
+  
 }
 
 body {
     background:radial-gradient(#E7EAEF,#6D7587);
     min-height:calc(100vh - 100px);
     font-family: Nunito, sans-serif;
-    color: #6D7587;
+    color: var(--text-color);
 }
 
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*Hamburger Menu on desktop devices*/
+
+/*INVISIBLE STANDARTIZED (use display: block; to show)*/
 #hamburger-menu {
+    position: fixed;
+    display: none; 
+    width: 20%;
+    min-width: 300px;
+    height: 90%; 
+    top: 5%;
+    left: 10px;
+    background-color: var(--main-color);
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    z-index: 10;
+    transition: ease-in-out 3s;
 }
 
+#hamburger-menu-exit-button {
+    display:flex;
+    position: relative;
+    justify-content: center;
+    background-color: var(--main-color);
+    height:3em;
+    aspect-ratio: 1/1 ;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin: 10px 10px auto auto;
+    z-index: 11;
+}
+
+#hamburger-menu-exit-button:hover{
+    background-color: var(--hover-color);
+    cursor:pointer;
+}
+
+#hamburger-menu-exit-button img{
+    display:flex;
+    position: relative;
+    aspect-ratio: 1/1 ;
+    height:calc(100%);
+    margin: 0 0 0 0;
+}
+
+.hamburger-menu-button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height:7vh;
+    max-height: 100px;
+    width: 80%;
+    border-radius: 100em;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 2vh auto auto auto;
+    font-size: 14px;
+    z-index: 15;
+}
+
+.hamburger-menu-button:hover{
+    background-color: var(--hover-color);
+    cursor:pointer;
+}
+
+/*"mein Github*/
+#hamburger-menu-button-6 {
+    margin: 10vh auto auto auto;
+}
+
+/*Hamburger Menu on phones*/
+
+/*INVISIBLE STANDARTIZED (use display: block; to show)*/
+#hamburger-menu-phone-container {
+    display:none;
+}
+
+#hamburger-menu-phone {
+    position: fixed;    
+    display: block;
+    min-height:90%;
+    width:90%;
+    background-color: var(--main-color);
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin: 0 auto auto 10px;
+    z-index: 11;
+}
+
+#hamburger-menu-exit-button-phone {
+    display:flex;
+    position: relative;
+    justify-content: center;
+    background-color: var(--main-color);
+    height:4em;
+    aspect-ratio: 1/1 ;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    margin: 10px 10px auto auto;
+    z-index: 12;
+}
+
+#hamburger-menu-exit-button-phone img{
+    display:flex;
+    position: relative;
+    aspect-ratio: 1/1 ;
+    height:calc(100%);
+    margin: 0 0 0 0;
+}
+
+
+/*Page banner*/
 
 #top-banner {
     display:flex;
     justify-content: center;
+    position: sticky;
+    overflow: hidden;
     max-width: 100vw;
     height:27vw;
-    background-color: #E7EAEF;
+    background-color: var(--main-color);
     border-radius: 30px;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px auto 10px; 
 }
+
+/*Navbar desktop devices*/
 
 #Navbar {
     display:flex;
-    position: relative;
+    position: sticky;
     justify-content: center;
-    background-color: #E7EAEF;
+    background-color: var(--main-color);
     min-height: 7vh;
     height: 70px;
     max-width: 100vw;
-    margin-top: 10px; 
+    margin: 10px 10px auto 10px; 
     border-radius: 70px;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
     
@@ -42,14 +173,19 @@ body {
     display:flex;
     position: relative;
     justify-content: center;
+    background-color: var(--main-color);
     aspect-ratio: 1/1 ;
     height:calc(100% - 20px);
-    margin-right: 10px;
-    margin-left: 10px;
     margin-top:0;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 100em;
     margin: auto 10px auto 10px;
+    transition:ease-in-out;
+}
+
+#navbar-hamburger-menu-button:hover {
+    background-color: var(--hover-color);
+    cursor:pointer;
 }
 
 #navbar-hamburger-menu-button img{
@@ -62,7 +198,45 @@ body {
     
 }
 
-#hamburger-menu-button-phone{
+.navbar-button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height:calc(100% - 20px);
+    width: 200em;
+    border-radius: 100em;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: auto 10px auto 1%;
+    font-size: 14px;
+}
+
+.navbar-button:hover {
+    background-color: var(--hover-color);
+    cursor:pointer;
+}
+
+.navbar-button p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto 0 auto;  
+}
+
+/*Navbar Phone*/
+
+#navbar-phone {
+    display:flex;
+    position: relative;
+    justify-content: center;
+    background-color: #ffffff00;    
+    min-height: calc(7vh + 20px);
+    max-width: 100vw;
+    margin: 10px 0 0 0;
+}
+
+#navbar-hamburger-menu-button-phone{
     display:block;
     position: fixed;
     justify-content: center;
@@ -70,27 +244,63 @@ body {
     width: 7vh;
     aspect-ratio: 1/1;
     border-radius: 3.5vh;
-    background-color: #E7EAEF;
+    background-color: var(--main-color);
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
-    margin: 20px 0 0 20px;
+    margin: 10px 0 0 20px;
 }
 
-#hamburger-menu-button-phone img{
+#navbar-hamburger-menu-button-phone img{
     display:block;
     position: relative;
     height: 100%;
 }
 
-.navbar-button{
+/*look of pressed navbar button*/
+
+.navbar-button-pressed {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: #E7EAEF;
+    background-color: var(--main-color);
     height:calc(100% - 20px);
     width: 200em;
     border-radius: 100em;
-    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
-    margin: auto 10px auto 40px;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.65), inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: auto 10px auto 1%;
     font-size: 14px;
 }
+
+.navbar-button-pressed p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto 0 auto;  
+}
+
+.navbar-button-pressed p:hover {
+    cursor:default;
+}
+
+.hamburger-menu-button-pressed {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height:7vh;
+    max-height: 100px;
+    width: 80%;
+    border-radius: 100em;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.65), inset 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 2vh auto auto auto;
+    font-size: 14px;
+    z-index: 15;
+}
+
+.hamburger-menu-button-pressed p:hover {
+    cursor:default;
+}
+
+/*Page for CSS (homepage and first button)*/
+
