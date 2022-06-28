@@ -387,7 +387,7 @@ a:hover {
 #figma-project-1-picture img {
     height:456px;
     width: 684px;
-    max-width: calc(100vw - 40px);
+    max-width: calc(100vw - 60px);
     border-radius: 30px;
     margin-top: 12px;
 }
