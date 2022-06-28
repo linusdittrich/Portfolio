@@ -149,8 +149,10 @@ a:hover {
     height:27vw;
     background-color: var(--main-color);
     border-radius: 30px;
+    top:10px;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
     margin: 10px 10px auto 10px; 
+    z-index: 1;
 }
 
 /*Navbar desktop devices*/
@@ -165,8 +167,9 @@ a:hover {
     max-width: 100vw;
     margin: 10px 10px auto 10px; 
     border-radius: 70px;
+    top: 10px;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
-    
+    z-index: 9;
 }
 
 #navbar-hamburger-menu-button{
@@ -228,17 +231,19 @@ a:hover {
 
 #navbar-phone {
     display:flex;
-    position: relative;
+    position: sticky;
     justify-content: center;
     background-color: #ffffff00;    
     min-height: calc(7vh + 20px);
     max-width: 100vw;
-    margin: 10px 0 0 0;
+    top: 10px;
+    margin: 0 0 -20px 0;
+    z-index: 10;
 }
 
 #navbar-hamburger-menu-button-phone{
-    display:block;
-    position: fixed;
+    display:flex;
+    position: sticky;
     justify-content: center;
     height: calc(100%-7vh);
     width: 7vh;
@@ -250,7 +255,7 @@ a:hover {
 }
 
 #navbar-hamburger-menu-button-phone img{
-    display:block;
+    display:flex;
     position: relative;
     height: 100%;
 }
@@ -302,5 +307,245 @@ a:hover {
     cursor:default;
 }
 
-/*Page for CSS (homepage and first button)*/
 
+/*Page*/
+
+#page {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    position: relative;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px auto 10px; 
+    z-index: 1;
+}
+
+/*Page for 'Figma & CSS+Javascript' Tab (homepage) (button 1)*/
+
+#introduction-figma {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    width: 720px;
+    max-width: 100vw - 20px;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 1% auto 1%; 
+    z-index: 1;
+}
+
+#introduction-figma p {
+    display:block;
+    justify-content: center;
+    position: relative;
+    margin: 15px 20px 10px 15px;
+}
+
+.figma-project {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    width:calc(100vw - 20px);
+    height:100%;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 20px 10px 10px auto; 
+    z-index: 1;
+}
+
+/*Portfolio*/
+
+#figma-project-1{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#figma-project-1-picture {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    height: 480px;
+    width: 720px;
+    max-width: calc(100vw - 40px);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px 20px 10px;
+    z-index: 2;
+}
+
+#figma-project-1-picture img {
+    height:456px;
+    width: 684px;
+    border-radius: 30px;
+    margin-top: 12px;
+}
+
+#figma-project-1-description {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    height: 200px;
+    width:720px;
+    max-width: calc(100vw - 40px);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px 10px 10px;
+    z-index: 2;
+}
+
+#figma-project-1-link{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 720px;
+    max-width: calc(100vw - 40px);
+    height:200px;
+    margin: 10px 10px 20px 10px;
+}
+
+#figma-project-1-link-button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height:60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 70px auto 10px calc(50% - 30px);
+    font-size: 14px;
+}
+
+#figma-project-1-link-button:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+#figma-project-1-link-text{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#figma-project-1-stylecard {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    height: 480px;
+    width: 720px;
+    max-width: calc(100vw - 40px);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px 10px 10px;
+    z-index: 2;
+}
+
+/*Gameboy Konzept*/
+
+#figma-project-2{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#figma-project-2-picture {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    height: 480px;
+    width: 720px;
+    max-width: calc(100vw - 40px);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px 20px 10px;
+    z-index: 2;
+}
+
+#figma-project-2-description {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    height: 200px;
+    width:720px;
+    max-width: calc(100vw - 40px);
+    max-width: calc(100vw - 20px);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px 10px 10px;
+    z-index: 2;
+}
+
+#figma-project-2-link{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 720px;
+    max-width: calc(100vw - 40px);
+    height:200px;
+    margin: 10px 10px 20px 10px;
+}
+
+#figma-project-2-link-button {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height:60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 70px auto 10px calc(50% - 30px);
+    font-size: 14px;
+}
+
+#figma-project-2-link-button:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
+#figma-project-2-link-text{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#figma-project-2-stylecard {
+    display:flex;
+    justify-content: center;
+    position: relative;
+    height: 480px;
+    width: 720px;
+    max-width: calc(100vw - 40px);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    margin: 10px 10px 10px 10px;
+    z-index: 2;
+}
+
+
+/*Page for 'Adobe Illustrator' Tab (button 2)*/
+
+/*Page for 'Zeichnungen' Tab (button 3)*/
+
+/*Page for 'Pixelart' Tab (button 4)*/
+
+/*Page for 'Sonstiges' Tab (button 5)*/
