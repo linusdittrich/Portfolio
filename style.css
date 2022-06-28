@@ -350,7 +350,6 @@ a:hover {
 .figma-project {
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
     position: relative;
     width:calc(100vw - 20px);
     height:100%;
