@@ -334,7 +334,7 @@ a:hover {
   z-index: 1;
 }
 
-/*Page for 'Figma' Tab (homepage)*/
+/*Page for 'Sonstiges' Tab*/
 
 #introduction-eda {
   display:flex;
@@ -379,6 +379,10 @@ a:hover {
     min-height:1px;
     margin: 10px 0 10px 0; 
     z-index: 1;
+}
+
+#sonstiges-project-1-box-1 a{
+  text-decoration: underline;
 }
 
 #sonstiges-project-1-picture1 {
