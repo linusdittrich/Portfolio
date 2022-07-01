@@ -334,7 +334,7 @@ a:hover {
     z-index: 1;
 }
 
-/*Page for 'CSS+Javascript' Tab (button 6/7)*/
+/*Page for 'CSS+Javascript' Tab*/
 
 #introduction-css {
     display:flex;
@@ -546,6 +546,8 @@ a:hover {
 }
 
 
+/*Ikosaeder*/
+
 #css-project-2{
     display:flex;
     justify-content: center;
@@ -559,7 +561,7 @@ a:hover {
     display:flex;
     justify-content: center;
     position: relative;
-    height: 420px;
+    height: 600px;
     width: 480px;
     max-width: calc(100vw - 40px);
     background-color: var(--main-color);
@@ -568,17 +570,75 @@ a:hover {
     margin: 10px 10px 10px 10px;
 }
 
+
+#tetraeder{
+    position:relative;
+    width:300px;
+    transform-origin: 150px -100px 80px ;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(160deg);
+    animation: animate 10s linear infinite;
+    }
+    
+    @keyframes animate
+    {
+        0%
+        {
+        transform: rotateX(-10deg) rotateY(0deg);   
+        }    
+        100%
+        {
+        transform: rotateX(-10deg) rotateY(360deg);    
+        }
+    }
+    
+    .t-side{
+        transform-origin: bottom;
+    }
+    
+    #t-side1{
+        position:absolute;
+        transform: rotateX(calc(90deg - 70.37deg)) rotatez(180deg) ;
+    }
+    
+    #t-side2{
+        position: absolute;
+        transform: rotateX(calc(70.37deg - 90deg));
+    }
+    
+    #t-side3{
+        position: absolute;
+        transform: translateZ(130px) translateX(74px) rotateY(60deg) rotateX(calc(90deg - 70.37deg));
+    }
+    
+    #t-side4{
+        position: absolute;
+        transform: translateZ(130px) translateX(-74px) rotateY(-60deg) rotateX(calc(90deg - 70.37deg));
+    }
+    
+    #t-side5{
+        position: absolute;
+        transform: translateZ(130px) translateX(74px) rotateY(60deg) rotateX(calc(90deg + 70.37deg));
+    }
+    
+    #t-side6{
+        position: absolute;
+        transform: translateZ(130px) translateX(-74px) rotateY(-60deg) rotateX(calc(90deg + 70.37deg));
+    }
+    
+    
+
 #css-project-2-description {
     display:flex;
     justify-content: center;
     position: relative;
-    min-height:100px;
     width:480px;
+    min-height: 1px;
     max-width: calc(100vw - 40px);
     background-color: var(--main-color);
     border-radius: 30px;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px auto 10px;
     z-index: 2;
 }
 
@@ -601,6 +661,8 @@ a:hover {
 }
 
 
+/*Cocktail Generator*/
+
 #css-project-3{
     display:flex;
     justify-content: center;
@@ -612,15 +674,103 @@ a:hover {
 
 #generator {
     display:flex;
-    justify-content: center;
     position: relative;
-    height: 420px;
+    height: 720px;
     width: 480px;
     max-width: calc(100vw - 40px);
     background-color: var(--main-color);
     border-radius: 30px;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
     margin: 10px 10px 10px 10px;
+}
+
+#display{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 10px 10px 20px;
+}
+
+#searchfield {
+    display: flex;
+    position: relative;
+    justify-content: auto;
+}
+
+#textfield {
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    justify-content: center;
+    height:40px;
+    width:200px;
+    margin: 10px 0 0 0;
+    background-color: var(--main-color);
+    border-color: var(--text-color);
+    border-style: solid;
+    
+}
+
+#searchbutton {
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    justify-content:space-evenly;
+    margin: 10px 0 0 210px;
+}
+
+#searchbutton:hover {
+    cursor:pointer;
+}
+
+#button{
+    display: flex;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    justify-content:space-evenly;
+    margin: 10px 0 0 270px;
+}
+
+#button:hover {
+    cursor:pointer;
+}
+
+#cocktailname {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#alcoholic {
+    margin-bottom: 20px;
+}
+
+#textinbetween {
+    margin-bottom: 15px;
+}
+
+#glass {
+    margin-bottom: 10px;
+}
+
+#zutaten {
+    display:flex;
+    position: relative;
+}
+
+#textinbetween2 {
+    margin-top: 15px;
 }
 
 #css-project-3-description {
@@ -633,7 +783,7 @@ a:hover {
     background-color: var(--main-color);
     border-radius: 30px;
     box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.65), 4px 4px 10px rgba(0, 0, 0, 0.25);
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px auto 10px;
     z-index: 2;
 }
 
@@ -642,6 +792,10 @@ a:hover {
     justify-content: center;
     position: relative;
     margin: 15px 20px 10px 15px;
+}
+
+#css-project-3-description a {
+    text-decoration: underline;
 }
 
 #css-project-3-link {
@@ -684,10 +838,10 @@ a:hover {
     cursor:default;
 }
 
-/*Page for 'Adobe Illustrator' Tab (button 2)*/
+/*Page for 'Adobe Illustrator' Tab*/
 
-/*Page for 'Zeichnungen' Tab (button 3)*/
+/*Page for 'Zeichnungen' Tab*/
 
-/*Page for 'Pixelart' Tab (button 4)*/
+/*Page for 'Pixelart' Tab*/
 
-/*Page for 'Sonstiges' Tab (button 5)*/
+/*Page for 'Sonstiges' Tab*/

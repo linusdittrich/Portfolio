@@ -7,50 +7,36 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
         <link href="/Portfolio/pages/css_style.css" rel="stylesheet" type="text/css">
         
+        <link rel="shortcut icon" href="/Portfolio/img/Logo.png">
 
         <title>
-            Linus Dittrich
+            Linus Dittrich - CSS&Javascript
         </title>
-        <!--         
-        ..--+++--..
-     .-'     |     `-.
-   +'        |        `+
-  '          |          `
- '           |           `
-:            |            :
-:          +'|`+          :
-.        +'  |  `+        ;
- +     +'    |    `+     +
-  `. +'      |      `+ .'
-    `._      |      _.'
-       `--.._|_..--' mh
-         src: asciiart.eu/logos/peace
-        -->
     </head>
     <body>
         <!--Hamburger Menu on desktop devices-->
         <div Id="hamburger-menu" class="hidden-xs">
             <div Id="hamburger-menu-exit-button"><img src="/Portfolio/img/hamburger-menu-exit-button.svg" type="image/svg"></div>
-            <a href="/Portfolio/index.html" Id="hamburger-menu-button-1" class="hamburger-menu-button">Figma</a>
-            <div  id="hamburger-menu-button-7" class="hamburger-menu-button-7 hamburger-menu-button-pressed"><p>CSS&Javascript</p></div>
-            <a href="/Portfolio/pages/Illustrator.html"Id="hamburger-menu-button-2" >Adobe Illustrator</a>
-            <a href="/Portfolio/pages/Zeichnungen.html" Id="hamburger-menu-button-3" class="hamburger-menu-button">Zeichnungen</a>
+            <a href="/Portfolio/index.html" class="hamburger-menu-button">Figma</a>
+            <div class="hamburger-menu-button hamburger-menu-button-pressed">CSS & Javascript</div>
+            <a href="/Portfolio/pages/Illustrator.html" class="hamburger-menu-button">Adobe Illustrator</a>
+            <a href="/Portfolio/pages/Zeichnungen.html"class="hamburger-menu-button">Zeichnungen</a>
             <a href="/Portfolio/pages/pixelart.html" class="hamburger-menu-button">Pixelart</a>
             <a href="/Portfolio/pages/sonstiges.html" class="hamburger-menu-button">Sonstiges</a>
-            <a href="https://github.com/linusdittrich" Id="hamburger-menu-button-6" class="hamburger-menu-button">mein Github</a>
+            <a href="https://github.com/linusdittrich" class="hamburger-menu-button" Id="hamburger-menu-button-6">mein Github</a>
         </div>
 
         <!--hamburger Menu on phones-->
         <div Id="hamburger-menu-phone-container"><!--for making display:none; possible with bootstrap-->
         <div Id="hamburger-menu-phone" class="visible-xs">
             <div Id="hamburger-menu-exit-button-phone"><img src="/Portfolio/img/hamburger-menu-exit-button.svg"></div>
-            <a href="/Portfolio/index.html" Id="hamburger-menu-button-1" class="hamburger-menu-button">Figma</a>
-            <div  id="hamburger-menu-button-7" class="hamburger-menu-button-7 hamburger-menu-button-pressed"><p>CSS&Javascript</p></div>
-            <a href="/Portfolio/pages/Illustrator.html"Id="hamburger-menu-button-2" >Adobe Illustrator</a>
-            <a href="/Portfolio/pages/Zeichnungen.html" Id="hamburger-menu-button-3" class="hamburger-menu-button">Zeichnungen</a>
+            <a href="/Portfolio/index.html" class="hamburger-menu-button">Figma</a>
+            <div class="hamburger-menu-button hamburger-menu-button-pressed">CSS & Javascript</div>
+            <a href="/Portfolio/pages/Illustrator.html" class="hamburger-menu-button">Adobe Illustrator</a>
+            <a href="/Portfolio/pages/Zeichnungen.html"class="hamburger-menu-button">Zeichnungen</a>
             <a href="/Portfolio/pages/pixelart.html" class="hamburger-menu-button">Pixelart</a>
             <a href="/Portfolio/pages/sonstiges.html" class="hamburger-menu-button">Sonstiges</a>
-            <a href="https://github.com/linusdittrich" Id="hamburger-menu-button-6" class="hamburger-menu-button">mein Github</a>
+            <a href="https://github.com/linusdittrich" class="hamburger-menu-button" Id="hamburger-menu-button-6">mein Github</a>
         </div></div>
 
         <!--page banner-->
@@ -62,12 +48,12 @@
         <div Id="Navbar" class="hidden-xs">
             <div id="navbar-hamburger-menu-button" class="round-button">
                 <img src="/Portfolio/img/navbar-hamburger-menu-button.svg" type="image/svg"></div>
-            <a href="/Portfolio/index.html" id="navbar-button1" class="navbar-button"> <p>Figma</p></a>
-            <div href="/Portfolio/pages/css.html" id="navbar-button6" class="navbar-button-pressed"><p>CSS&Javascript</p></div>
-            <a href="/Portfolio/pages/Illustrator.html" id="navbar-button2" class="navbar-button"><p>Adobe Illustrator</p></a>
-            <a href="/Portfolio/pages/Zeichnungen.html" id="navbar-button3" class="navbar-button"><p>Zeichnungen</p></a>
-            <a href="/Portfolio/pages/pixelart.html" id="navbar-button4" class="navbar-button"><p>Pixelart</p></a>
-            <a href="/Portfolio/pages/sonstiges.html" id="navbar-button5" class="navbar-button"><p>Sonstiges</p></a>
+            <a href="/Portfolio/index.html" class="navbar-button"> <p>Figma</p></a>
+            <div href="/Portfolio/pages/css.html" class="navbar-button-pressed"><p>CSS&Javascript</p></div>
+            <a href="/Portfolio/pages/Illustrator.html" class="navbar-button"><p>Adobe Illustrator</p></a>
+            <a href="/Portfolio/pages/Zeichnungen.html" class="navbar-button"><p>Zeichnungen</p></a>
+            <a href="/Portfolio/pages/pixelart.html" class="navbar-button"><p>Pixelart</p></a>
+            <a href="/Portfolio/pages/sonstiges.html" class="navbar-button"><p>Sonstiges</p></a>
         </div>
 
         <!--Navbar on phones (invisible)-->
@@ -121,20 +107,27 @@
 
                 </div>
                 <div Id="css-project-1-description">
-                    <p>In diesem Projekt habe ich 3-dimensionalen Würfel in CSS erstellt. Durch clicken auf den Würfel werden Funktionen in Javascript ausgeführt, die eine Animation starten und die Anordnung der Seiten zufällig verändern.</p>
+                    <p>In diesem Projekt habe ich einen 3-dimensionalen Würfel in CSS erstellt. Durch clicken auf den Würfel werden Funktionen in Javascript ausgeführt, die eine Animation starten und die Anordnung der Seiten zufällig verändern.</p>
                 </div>
                 <div Id="css-project-1-link">
-                    <a href="" id="css-project-1-link-button" class="link-button"> <img src="/Portfolio/img/link-button.svg" type="image/svg"></a> 
+                    <a href="https://github.com/linusdittrich/cssdice" id="css-project-1-link-button" class="link-button"> <img src="/Portfolio/img/link-button.svg" type="image/svg"></a> 
                     <div id="css-project-1-link-text">Zum Projekt</div> 
                 </div>
             </div>
             
             <div Id="css-project-2" class="css-project">
                 <div Id="wuerfel2" >
-
+                    <div Id="tetraeder">
+                        <div Id="t-side1" class="t-side"><img src="/Portfolio/img/tetraeder.svg" type="image/svg"></div>
+                        <div Id="t-side2" class="t-side"><img src="/Portfolio/img/tetraeder.svg" type="image/svg"></div>
+                        <div Id="t-side3" class="t-side"><img src="/Portfolio/img/tetraeder.svg" type="image/svg"></div> 
+                        <div Id="t-side4" class="t-side"><img src="/Portfolio/img/tetraeder.svg" type="image/svg"></div>
+                        <div Id="t-side5" class="t-side"><img src="/Portfolio/img/tetraeder.svg" type="image/svg"></div> 
+                        <div Id="t-side6" class="t-side"><img src="/Portfolio/img/tetraeder.svg" type="image/svg"></div>
+                    </div>
                 </div>
                 <div Id="css-project-2-description">
-                    <p> </p>
+                    <p>Hier ein weiteres Projekt. Dieses Oktaeder ist ausschließlich in CSS erstellt worden.</p>
                 </div>
                 <div Id="css-project-2-link"> <!--empty div to match project-1--> </div>
                     
@@ -142,12 +135,40 @@
 
             <div Id="css-project-3" class="css-project">
                 <div Id="generator">
+
+                    <div id="display"> 
+
+                        <div 
+                            id="searchfield">
+                            <input id="textfield" type="text">
+                            <div id="searchbutton"> <img src="/Portfolio/img/search-button.svg" type="image/svg"> </div>
+                            <div Id="button"> <img id="buttonimg" src="/Portfolio/img/random-button.svg" type="image/svg"> </div>
+                        </div>
+
+                        <div class="Text" id="cocktailname">Cocktail Name</div> 
+                        <div class="Text" id="alcoholic"> </div>
+                        <div class="Text" id="category"> </div>
+
+                        <div class="Text" id="textinbetween"> For this cocktail you will need:</div>
+
+                        <div class="Text" id="glass"> </div>
+
+                        <div class="Text" id="zutaten"> </div>
+
+                        <div class="Text" id="textinbetween2"> Instructions:</div>
+                        <div class="Text" id="instructions"> </div>
+
+                        <div class="Text" id="measure"> </div>
+                    </div>
+            
                 </div>
+
                 <div Id="css-project-3-description">
-                    <p> </p>
+                    <p>Dieses Projekt war dazu gedacht, mir den Umgang mit APIs und Arrays näherzubringen. Hierfür nutze ich eine <a href="https://www.thecocktaildb.com/api.php">offene API</a>, deren Inhalt eine Auswahl an Cocktailrezepten ist. Mit dieser API konnte ich eine Suchfunktion und eine Funktion zur zufälligen Anzeige eines Cocktails einrichten.</p>
                 </div>
+
                 <div Id="css-project-3-link">
-                    <a href="" id="css-project-3-link-button" class="link-button"> <img src="/Portfolio/img/link-button.svg" type="image/svg"></a> 
+                    <a href="https://github.com/linusdittrich/cocktailapipractise" id="css-project-3-link-button" class="link-button"> <img src="/Portfolio/img/link-button.svg" type="image/svg"></a> 
                     <div id="css-project-3-link-text">Zum Projekt</div> 
                 </div>
             </div>
